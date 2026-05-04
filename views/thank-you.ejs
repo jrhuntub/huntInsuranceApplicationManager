@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Received</title>
+    <style>
+        /* Ensures padding doesn't stretch elements wider than the screen */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #729be9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Changed to min-height for small screens */
+            margin: 0;
+            padding: 20px; /* Adds breathing room on small screens */
+            text-align: center;
+        }
+        
+        .success-card {
+            background: white;
+            padding: 50px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        
+        .checkmark {
+            font-size: 60px;
+            color: #2ecc71;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        
+        p {
+            color: #465b70;
+            line-height: 1.6;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 25px;
+            text-decoration: none;
+            padding: 12px 24px; /* Adjusted padding to look more like a button */
+            background-color: #729be9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            background-color: #2980b9;
+        }
+
+        /* --- MOBILE RESPONSIVE RULES --- */
+        @media (max-width: 480px) {
+            .success-card {
+                padding: 40px 20px; /* Reduces the thick white border inside the card */
+            }
+            
+            h1 {
+                font-size: 24px; /* Scales down the header slightly */
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            .back-link {
+                display: block; /* Makes the button full-width */
+                width: 100%;
+                padding: 15px; /* Taller button for easier thumb-tapping */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="success-card">
+        <div class="checkmark">✓</div>
+        <h1>Thank You!</h1>
+        <p>Your application has been successfully submitted! Thank you for your interest, we will be in touch soon.</p>
+        <a href="/" class="back-link">Return to Home</a>
+    </div>
+
+</body>
+</html>
