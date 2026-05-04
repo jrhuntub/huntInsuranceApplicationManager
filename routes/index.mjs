@@ -43,8 +43,8 @@ router.post('/submit', upload.single('resume'), async (req, res) => {
 
         // Send the email using Resend
         const { data, error } = await resend.emails.send({
-            from: 'Application Portal <onboarding@resend.dev>', // Resend testing email
-            to: ['jayhunt01@yahoo.com'], // REPLACE THIS WITH YOUR ACTUAL EMAIL
+            from: 'Application Portal <onboarding@resend.dev>',
+            to: ['jrhunt@my.milligan.edu'],
             subject: `New Job Application from ${fullName}`,
             html: `
                 <h2>New Application Received</h2>
